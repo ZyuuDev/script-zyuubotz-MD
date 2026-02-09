@@ -1,0 +1,86 @@
+[
+  {
+    "name": "ytmp4",
+    "description": "Download video dari YouTube",
+    "example": "tolong download video ini https://youtube.com/watch?v=abc123",
+    "format": "[.ytmp4 LINK]"
+  },
+  {
+    "name": "ytmp3",
+    "description": "Download audio dari YouTube",
+    "example": "tolong download audio ini https://youtube.com/watch?v=abc123",
+    "format": "[.ytmp3 LINK]"
+  },
+  {
+    "name": "tiktok",
+    "description": "Download video dari TikTok",
+    "example": "tolong download video ini https://www.tiktok.com/anlknbla",
+    "format": "[.tiktok LINK]"
+  },
+  {
+    "name": "instagram",
+    "description": "Download video dari Instagram",
+    "example": "tolong download video ini https://www.instagram.com/nakjabk",
+    "format": "[.instagram LINK]"
+  },
+  {
+    "name": "groupopen",
+    "description": "Buka grup",
+    "example": "tolong buka grup ini",
+    "format": "[.groupopen]"
+  },
+  {
+    "name": "groupclose",
+    "description": "Tutup grup",
+    "example": "tolong tutup grup ini",
+    "format": "[.groupclose]"
+  },
+  {
+    "name": "mulaigiveaway",
+    "description": "Mulai giveaway",
+    "example": "tolong mulai giveaway ini Uang 10 Juta",
+    "format": "[.mulaigiveaway TEKS]"
+  },
+  {
+    "name": "rollgiveaway",
+    "description": "Roll giveaway",
+    "example": "tolong roll giveaway ini",
+    "format": "[.rollgiveaway]"
+  },
+  {
+    "name": "cekgiveaway",
+    "description": "Cek giveaway",
+    "example": "tolong cek giveaway ini",
+    "format": "[.cekgiveaway]"
+  },
+  {
+    "name": "tutupgiveaway",
+    "description": "Tutup giveaway",
+    "example": "tolong tutup giveaway ini",
+    "format": "[.tutupgiveaway]"
+  },
+  {
+    "name": "play2",
+    "description": "Download musik dari youtube cuma pakai judul",
+    "example": "cari lagu mantra hujan di youtube",
+    "format": "[.play2 NAMA LAGU]"
+  },
+  {
+    "name": "spotify2",
+    "description": "Download musik dari spotify cuma pakai judul",
+    "example": "cari lagu mantra hujan di spotify",
+    "format": "[.spotify2 NAMA LAGU]"
+  },
+  {
+    "name": "pinterest",
+    "description": "cari foto di pinterest",
+    "example": "carikan saya foto elaina",
+    "format": "[.pinterest NAMA FOTO]"
+  },
+  {
+    "name": "kick",
+    "description": "kick orang dari grup",
+    "example": "kick dia dari grup",
+    "format": "[.kick QUOTED_MESSAGE]"
+  }
+]

@@ -1,0 +1,166 @@
+import { watchFile, unwatchFile } from 'fs'
+import chalk from 'chalk'
+import { fileURLToPath } from 'url'
+
+global.config = {
+    /*============== INFO LINK ==============*/
+    instagram: 'https://instagram.com/nndaaaaxy_',
+    github: 'https://github.com/ZyuuDev',
+    group: '',
+    website: '',
+    idch: '',
+
+    /*============== PAYMENT ==============*/
+    dana: '',
+    ovo: '',
+    gopay: '',
+    pulsa: '',
+    qris: '',
+
+    /*============== STAFF ==============*/
+    owner: [
+        ['62xxx', 'Name', true]
+    ],
+
+    /*============= PAIRING =============*/
+    pairingNumber: "62xxx",
+    pairingAuth: true,
+
+    /*============== API ==============*/
+    APIs: {
+        lol: 'https://api.lolhuman.xyz',
+        rose: 'https://api.itsrose.rest',
+        xzn: 'https://skizo.tech',
+        botcahx: 'https://api.botcahx.eu.org',
+        ryhar: 'https://api.ryhar.my.id'
+    },
+
+    APIKeys: {
+        'https://api.lolhuman.xyz': 'RyAPI',
+        'https://api.itsrose.rest': 'Rk-f5d4b183e7dd3dd0a44653678ba5107c',
+        'https://skizo.tech': 'RyHar',
+        'https://api.botcahx.eu.org': 'RyAPI',
+        'https://api.ryhar.my.id': 'RyAPIs'
+    },
+
+    /*============== TEXT ==============*/
+    watermark: '',
+    author: '',
+    loading: 'Please Wait...',
+    errorMsg: 'Error :)',
+
+    stickpack: 'Made With',
+    stickauth: '',
+
+    /*============== DATABASE ==============*/
+    database: '',
+    mongoDBV2: false,
+    nameDB: '',
+
+    /*============== DIGIFLAZZ ==============*/
+    digi: {
+        username: "",
+        apikey: ""
+    },
+
+    /*============== ORDERKUOTA ==============*/
+    OK: {
+        ID: "",
+        Apikey: ""
+    },
+    
+    /*============== TAX ==============*/
+    taxRate: 0.05,
+    taxMax: 2000,
+
+    /*============== OTHERS ==============*/
+    botUtama: true,
+    botKe: 0
+}
+
+/*============== EMOJI ==============*/
+global.rpg = {
+    emoticon(string) {
+        string = string.toLowerCase()
+        let emot = {
+            level: '📊',
+            limit: '🎫',
+            health: '❤️',
+            exp: '✨',
+            atm: '💳',
+            money: '💰',
+            bank: '🏦',
+            potion: '🥤',
+            diamond: '💎',
+            common: '📦',
+            uncommon: '🛍️',
+            mythic: '🎁',
+            legendary: '🗃️',
+            superior: '💼',
+            pet: '🔖',
+            trash: '🗑',
+            armor: '🥼',
+            sword: '⚔️',
+            pickaxe: '⛏️',
+            fishingrod: '🎣',
+            wood: '🪵',
+            rock: '🪨',
+            string: '🕸️',
+            horse: '🐴',
+            cat: '🐱',
+            dog: '🐶',
+            fox: '🦊',
+            robo: '🤖',
+            petfood: '🍖',
+            iron: '⛓️',
+            gold: '🪙',
+            emerald: '❇️',
+            upgrader: '🧰',
+            bibitanggur: '🌱',
+            bibitjeruk: '🌿',
+            bibitapel: '☘️',
+            bibitmangga: '🍀',
+            bibitpisang: '🌴',
+            anggur: '🍇',
+            jeruk: '🍊',
+            apel: '🍎',
+            mangga: '🥭',
+            pisang: '🍌',
+            botol: '🍾',
+            kardus: '📦',
+            kaleng: '🏮',
+            plastik: '📜',
+            gelas: '🧋',
+            chip: '♋',
+            umpan: '🪱',
+            skata: '🧩',
+            donasi: '💸',
+            steak: '🥩',
+            ayam_goreng: '🍗',
+            ribs: '🍖',
+            roti: '🍞',
+            udang_goreng: '🍤',
+            bacon: '🥓',
+            gandum: '🌾',
+            minyak: '🥃',
+            garam: '🧂',
+            babi: '🐖',
+            ayam: '🐓',
+            sapi: '🐮',
+            udang: '🦐'
+        }
+        if (typeof emot[string] !== 'undefined') {
+            return emot[string]
+        } else {
+            return ''
+        }
+    }
+}
+
+//------ JANGAN DIUBAH -----
+let file = fileURLToPath(import.meta.url)
+watchFile(file, () => {
+    unwatchFile(file)
+    console.log(chalk.redBright("Update 'config.js'"))
+    import(`${file}?update=${Date.now()}`)
+})

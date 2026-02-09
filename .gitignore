@@ -1,0 +1,8 @@
+.env
+config.js
+tmp
+sessions
+sessions-jadibot
+node_modules
+database.json
+package-lock.json
